@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="https://www.chelseafc.com/en/tickets/mens-tickets">TICKETS</a></li>
+                    <li class="dropdown">
+                        <a href="https://www.chelseamegastore.com/en/?_s=bm-FI-PSC-CFC-ShopNavEN">SHOP</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.chelseamegastore.com/en/chelsea-men/t-43110668+ga-34+z-915271-809855383">Men's Kits</a>
+                            <a href="https://www.chelseamegastore.com/en/chelsea-women/t-32338402+ga-68+z-920940-1417060386">Women's Kits</a>
+                            <a href="https://www.chelseamegastore.com/en/chelsea-kids/t-54551746+ga-92+z-83128-1860848995">Kid's Kits</a>
+                        </div>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>About Us</h1>
+    </section>
+</header>
+    <main>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>The Pride of London</h1>
+                <p>Chelsea Football Club is an English professional football club based in Fulham, West London. Founded in 1905, we play our home games at Stamford Bridge. We compete in the Premier League, the top division of English football. We won our first major honour, the League championship, in 1955. We won the FA Cup for the first time in 1970, our first European honour, the Cup Winners' Cup, in 1971, and became the third English club to win the Club World Cup in 2021.
+
+                    We are one of five clubs and the first English club to have won all three pre-1999 main European club competitions, the "European Treble" of European Cup/UEFA Champions League, European/UEFA Cup Winners' Cup, and UEFA Cup/UEFA Europa League. We are also the only club to have won all three major European competitions twice. We are also the only London club to have won the Champions League and the Club World Cup. Domestically, we have won six league titles, eight FA Cups, five League Cups, and four FA Community Shields. Internationally, we have won the UEFA Champions League, the UEFA Europa League, the UEFA Cup Winners' Cup and the UEFA Super Cup twice each, and the FIFA Club World Cup once since our inception. In terms of overall trophies won, Chelsea is the joint fourth-most successful club in English football.</p>
+                    <a href="trophies.html" class="hero-btn blue-btn">VIRTUAL TROPHY ROOM</a>
+            </div>
+            <div class="about-col">
+                <img src="about2.png">
+        </div>
+        <h3>Visit us at the Bridge!</h3>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.7194929531124!2d-0.19353142318017286!3d51.481662971807516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford%20Bridge!5e0!3m2!1sro!2sro!4v1712674435982!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    </main>
+    <footer>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Experience Chelsea beyond the game. Dive into our social media channels for exclusive content, behind-the-scenes access, and community engagement. <br>Follow us now and join the global Chelsea family!</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/ChelseaFC/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/ChelseaFC" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/chelseafc/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>Made by Turcu Filip Ianis, one of our own</p>
+    </section>
+    </footer>
+    <script> //menu toggle mobile
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

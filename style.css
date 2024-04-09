@@ -37,7 +37,7 @@ nav img{
 }
 .nav-links ul li::after{
     content: '';
-    width: 0;
+    width: 0px;
     height: 2px;
     background: #d5e6fb;
     display: block;
@@ -84,17 +84,16 @@ nav .fas{
     display: none;
 }
 .dropdown:hover {
-    background-color: #2500ba;
+    background-color: rgba(37, 0, 186, 0.5);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown-content {
-    
         display: none;
         position: absolute;
-        background-color: #2500ba;
+        background-color: rgba(37, 0, 186, 0.5);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -181,7 +180,8 @@ h3{
     font-weight: 600;
 }
 .latest-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    transform: scale(1.05);
 }
 .video-container {
     position: relative;
@@ -236,6 +236,11 @@ h3{
     margin: 0 13px;
     cursor: pointer;
     padding :18px 0;
+    transition: transform 0.3s ease,color 0.5s ease;
+}
+.icons .fab:hover {
+    transform: scale(1.2);
+    color:#0a061d
 }
 @media(max-width:932px){
     .footer h4 {
@@ -281,4 +286,392 @@ h3{
     .row{
         flex-direction: column;
     }
+    .chelsea-logo {
+        width: 100px; 
+    }
+
+    .box {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .intermediate-text {
+        font-size: 14px; 
+    }
+
+    .cups-left, .cups-right {
+        display: none;
+    }
+
+        
+        .text-box p{
+            margin: 0 auto;
+
+            font-size: 16px;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .chelsea-logo {
+            width: 100px; 
+        }
+
+        .box {
+            width: 100px; 
+            height: 100px;
+        }
+
+        .intermediate-text {
+            font-size: 14px; 
+        }
+
+        .cups-left, .cups-right {
+            display: none;
+        }
+
+        .trophy-row {
+            flex-direction: column;
+        }
+
+        .trophy-col {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .trophy {
+            width: 100%;
+            height: auto;
+        }
+}
+/* About page */
+.sub-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(shedwall.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col h1{
+    margin-top: -50px;
+    text-align: center;
+    font-size: 30px;
+}
+.about-col p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.blue-btn{
+    display:flex;
+    justify-content: center;
+    border:1px solid #2500ba;
+    color: #2500ba;
+    background: transparent;
+}
+.blue-btn:hover{
+    background: #2500ba;
+    color: #fff;
+    transition: 1s;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+}
+
+/*trophies*/
+.trophies-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(trophies.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trophy-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    align-items: space-around;
+}
+
+.trophy-col {
+    flex: 1;
+    padding: 10px;
+}
+
+.trophy {
+    margin-top: 0;
+    background-color: #2500ba;
+    border: 2px solid #2500ba;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+}
+
+.trophy-description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+}
+.trophy img {
+    transform: scale(0.5);
+}
+.trophy:hover .trophy-description {
+    bottom: 0;
+}
+.trophy .trophy4 {
+    transform: scale(0.3);
+}
+.trophy .trophy1 {
+    transform: scale(0.7);
+}
+.trophy .trophy5 {
+    transform: scale(0.4);
+}
+.trophy .trophy6 {
+    transform: scale(0.3);
+}
+.trophy .trophy7 {
+    transform: scale(0.3);
+}
+.trophy h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.trophy-name {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.trophy:hover .trophy-name {
+    text-shadow: -1px -1px 0 #FFD700, 1px -1px 0 #FFD700, -1px 1px 0 #FFD700, 1px 1px 0 #FFD700;
+}
+.trophy-description p{
+    font-size: 20px;
+    text-align: center;
+}
+/*animation*/
+.chelsea-logo {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-100%);
+    margin-bottom: -120px;
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    -ms-align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width:100px;
+    height:200px;
+    background: linear-gradient(#2500ba,#e4de17);
+    animation:rotate 4s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    inset: 5px;
+    border-radius: 20px;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.intermediate-text {
+    text-align: center; 
+    margin: 0x auto;
+    color: #2500ba;
+    text-shadow: 0 0 10px #e4de17;
+    font-size: 30px;
+}
+.cups-left, .cups-right {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    transform: translateY(200px);
+}
+
+.cups-left {
+    left: 0;
+}
+
+.cups-right {
+    right: 0;
+    transform: translateY(200px) scaleX(-1);
+}
+
+.team-header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom:0px;
+}
+.team-header h1{
+    color: #fff;
+    padding-top: 50px;
+    font-family: "Changa", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+@media(min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+.team-image{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transform: translateY(200px);
+    position: relative; 
+    z-index: 2;
+}
+.player{
+    padding-top: 150px;
+    display: inline-block;
+    transform: translateY(400px);
+}
+.trophy:hover .player{
+    transform: scale(0.8);
+}
+.box1 h1{
+    text-align: center;
+    font-size: 60px;
+    color: #2500ba;
+    z-index: 1;
+}
+
+.box1 p{
+    text-align: center;
+    font-size: 20px;
+    color: #2500ba;
+    z-index: 2;
+    margin-top: 200px;
+}
+.box1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: #ffffff;
+    width: 500px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    -ms-align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box1::before{
+    content: '';
+    position: absolute;
+    width:50px;
+    height:700px;
+    background: linear-gradient(#2500ba,#e4de17);
+    animation:rotate 4s linear infinite;
+}
+.box1::after{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    inset: 10px;
+    border-radius: 20px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+    color: #2500ba;
+    margin-top: 0px;
+    z-index: 9999;
 }
