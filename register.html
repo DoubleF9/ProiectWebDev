@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chelsea</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/image.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="top">
+        <h1 id="userName">You are not logged in!</h1>
+        <div id="topButtons" class="bt">
+            <button id="logout">Logout</button>
+            <button id="register">Register</button>
+            <button id="login">Login</button>
+        </div>
+    </div>
+
+    <div id="registerForm">
+        <div class="formBox">
+            <h2>Register</h2>
+            <form>
+                <input type="text" id="registerUsername" placeholder="Username" name="registerUsername" required>
+                <input type="email" id="registerEmail" placeholder="Email" name="email" required>
+                <input type="tel" id="registerPhoneNumber" placeholder="Phone Number" name="registerPhoneNumber" pattern="\+[0-9]{10}" required>
+                <input type="password" id="registerPassword" placeholder="Password" name="registerPassword" required>
+                <input type="password" id="registerPassword2" placeholder="Repeat password" name="registerPassword2" required>
+                <button id="registerSubmit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginForm">
+        <div class="formBox">
+            <h2>Login</h2>
+            <form>
+                <input type="text" id="loginUsername" placeholder="Username" name="loginUsername" required>
+                <input type="password" id="loginPassword" placeholder="Password" name="loginPassword" required>
+                <button id="loginSubmit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <img id="centered-image" class="centered-image" src="images/image.png" alt="Welcome Image">
+    <div id="mainContent">
+        <h1>Welcome to Chelsea!</h1>
+        <br>
+        <p>Press "B" to change the color of the football!</p>
+        <br>
+        <i class='bx bx-football' id="ball"></i>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
